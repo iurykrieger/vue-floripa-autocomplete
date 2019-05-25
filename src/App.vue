@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <VueAutocomplete class="autocomplete"/>
+    <Autocomplete class="autocomplete"/>
   </div>
 </template>
 
 <script>
-import VueAutocomplete from './components/VueAutocomplete'
+import Autocomplete from './components/Autocomplete'
 
 export default {
   name: 'app',
   components: {
-    VueAutocomplete
+    Autocomplete
   },
   data () {
     return {
