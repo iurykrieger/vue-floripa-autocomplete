@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "start-storybook",
+    "serve": "start-storybook -p 8080",
     "docs": "build-storybook -s public -o docs",
     "build": "vue-cli-service build --target wc --name vue-floripa 'src/components/*.vue'",
     "lint": "vue-cli-service lint"
