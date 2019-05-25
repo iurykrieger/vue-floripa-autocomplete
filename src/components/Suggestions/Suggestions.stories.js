@@ -4,7 +4,7 @@ import { text, withKnobs } from '@storybook/addon-knobs'
 import VueFloripaSuggestions from './Suggestions.vue'
 import notes from './Suggestions.md'
 
-storiesOf('Suggestions', module)
+storiesOf('Vue Floripa|Suggestions', module)
   .addDecorator(withKnobs)
   .addDecorator(withNotes)
   .add('Default', () => ({
