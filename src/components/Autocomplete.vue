@@ -13,7 +13,7 @@
 
 <script>
 import Form from './Form.vue'
-import Suggestions from './Suggestions'
+import Suggestions from './Suggestions/Suggestions'
 
 export default {
   name: 'VueAutocomplete',
