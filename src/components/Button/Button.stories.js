@@ -4,7 +4,7 @@ import { text, withKnobs } from '@storybook/addon-knobs'
 import VueFloripaButton from './Button.vue'
 import notes from './Button.md'
 
-storiesOf('Button', module)
+storiesOf('Vue Floripa|Button', module)
   .addDecorator(withKnobs)
   .addDecorator(withNotes)
   .add('Default', () => ({
