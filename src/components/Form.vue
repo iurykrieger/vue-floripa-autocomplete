@@ -3,24 +3,24 @@
     :action="action"
     id="autocomplete-form"
   >
-    <VueInput
+    <VueFloripaInput
       :value="query"
       @input="onQueryChange"
       :name="queryParam"
     />
-    <VueButton />
+    <VueFloripaButton />
   </form>
 </template>
 
 <script>
-import VueButton from './VueButton'
-import VueInput from './VueInput'
+import Button from './Button'
+import Input from './Input'
 
 export default {
-  name: 'VueForm',
+  name: 'Form',
   components: {
-    VueButton,
-    VueInput
+    'VueFloripaButton': Button,
+    'VueFloripaInput': Input
   },
   props: {
     action: {

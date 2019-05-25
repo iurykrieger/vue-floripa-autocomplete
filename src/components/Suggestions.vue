@@ -7,19 +7,19 @@
         v-for="suggestion in suggestions"
         :key="suggestion.id"
       >
-        <VueMovie :movie="suggestion"/>
+        <VueFloripaMovie :movie="suggestion"/>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-import VueMovie from './VueMovie'
+import Movie from './Movie'
 
 export default {
-  name: 'VueSuggestions',
+  name: 'Suggestions',
   components: {
-    VueMovie
+    'VueFloripaMovie': Movie
   },
   data () {
     return {

@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target wc --name vue-autocomplete ./src/components/Autocomplete.vue",
+    "build": "vue-cli-service build --target wc --name vue-floripa 'src/components/*.vue'",
     "lint": "vue-cli-service lint"
   },
-  "main": "./dist",
+  "main": "./dist/vue-floripa.min.js",
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10"

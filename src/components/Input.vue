@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'VueInput',
+  name: 'Input',
   props: {
     value: {
       type: String,
