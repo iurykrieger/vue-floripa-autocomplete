@@ -57,6 +57,8 @@ export default {
 .suggestions {
   background: #FFFFFF;
   border: 1px solid #6666;
+  position: absolute;
+  z-index: 2;
 }
 
 .suggestions ul {
