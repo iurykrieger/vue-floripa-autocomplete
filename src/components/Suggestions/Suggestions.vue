@@ -7,14 +7,18 @@
         v-for="suggestion in suggestions"
         :key="suggestion.id"
       >
-        <VueFloripaMovie :movie="suggestion"/>
+        <slot name="movie"
+          :movie="suggestion"
+        >
+          <VueFloripaMovie :movie="suggestion"/>
+        </slot>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-import Movie from './Movie'
+import Movie from '../Movie'
 
 export default {
   name: 'Suggestions',
@@ -34,8 +38,8 @@ export default {
       required: true
     }
   },
-  watch: {
-    query (query) {
+  methods: {
+    fetchMovies (query) {
       fetch(`${this.apiUrl}?s=${query}&r=json&apikey=${this.apiKey}`)
         .then(response => response.json())
         .then(result => result.Search || [])
@@ -48,6 +52,14 @@ export default {
             url: `https://imdb.com/title/${movie.imdbID}`
           }))
         })
+    }
+  },
+  mounted () {
+    this.fetchMovies(this.query)
+  },
+  watch: {
+    query (query) {
+      this.fetchMovies(query)
     }
   }
 }

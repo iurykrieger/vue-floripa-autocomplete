@@ -16,9 +16,25 @@ storiesOf('Button', module)
       }
     },
     template: `
-      <vue-floripa-button
-        :text="text"
-      />
+      <vue-floripa-button>
+        {{ text }}
+      </vue-floripa-button>
+    `
+  }), {
+    notes
+  })
+  .add('With emoji', () => ({
+    components: { VueFloripaButton },
+    props: {
+      emojis: {
+        type: String,
+        default: text('emojis', '😀 😎 👍 💯')
+      }
+    },
+    template: `
+      <vue-floripa-button>
+        {{ emojis }}
+      </vue-floripa-button>
     `
   }), {
     notes

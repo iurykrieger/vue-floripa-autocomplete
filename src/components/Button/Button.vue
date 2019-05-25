@@ -1,6 +1,9 @@
 <template>
-  <button type="submit">
-    {{ text }}
+  <button
+    :class="{ rounded }"
+    type="submit"
+  >
+    <slot></slot>
   </button>
 </template>
 
@@ -8,9 +11,9 @@
 export default {
   name: 'Button',
   props: {
-    text: {
-      type: String,
-      default: 'Search'
+    rounded: {
+      type: Boolean,
+      default: false
     }
   }
 }
