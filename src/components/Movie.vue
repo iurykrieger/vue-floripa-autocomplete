@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'VueMovie',
+  name: 'Movie',
   props: {
     movie: {
       type: Object,

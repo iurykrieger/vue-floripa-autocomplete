@@ -1,25 +1,25 @@
 <template>
   <div id="autocomplete">
-    <VueForm
+    <VueFloripaForm
       :action="action"
       :query-param="queryParam"
       v-model="query"
     />
-    <VueSuggestions
+    <VueFloripaSuggestions
       :query="query"
     />
   </div>
 </template>
 
 <script>
-import VueForm from './VueForm.vue'
-import VueSuggestions from './VueSuggestions'
+import Form from './Form.vue'
+import Suggestions from './Suggestions'
 
 export default {
   name: 'VueAutocomplete',
   components: {
-    VueForm,
-    VueSuggestions
+    'VueFloripaForm': Form,
+    'VueFloripaSuggestions': Suggestions
   },
   data () {
     return {

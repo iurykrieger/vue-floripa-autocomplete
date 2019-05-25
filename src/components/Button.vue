@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'VFButton',
+  name: 'Button',
   props: {
     text: {
       type: String,
