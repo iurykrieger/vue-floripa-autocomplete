@@ -1,11 +1,11 @@
 <template>
   <div id="autocomplete">
-    <VueFloripaForm
+    <CEJSForm
       :action="action"
       :query-param="queryParam"
       v-model="query"
     />
-    <VueFloripaSuggestions
+    <CEJSSuggestions
       :query="query"
     />
   </div>
@@ -18,8 +18,8 @@ import Suggestions from './Suggestions'
 export default {
   name: 'VueAutocomplete',
   components: {
-    'VueFloripaForm': Form,
-    'VueFloripaSuggestions': Suggestions
+    'CEJSForm': Form,
+    'CEJSSuggestions': Suggestions
   },
   data () {
     return {

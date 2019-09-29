@@ -7,7 +7,7 @@
         v-for="suggestion in suggestions"
         :key="suggestion.id"
       >
-        <VueFloripaMovie :movie="suggestion"/>
+        <CEJSMovie :movie="suggestion"/>
       </li>
     </ul>
   </div>
@@ -19,7 +19,7 @@ import Movie from './Movie'
 export default {
   name: 'Suggestions',
   components: {
-    'VueFloripaMovie': Movie
+    'CEJSMovie': Movie
   },
   data () {
     return {

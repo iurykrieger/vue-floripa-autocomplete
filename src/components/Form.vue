@@ -3,12 +3,12 @@
     :action="action"
     id="autocomplete-form"
   >
-    <VueFloripaInput
+    <CEJSInput
       :value="query"
       @input="onQueryChange"
       :name="queryParam"
     />
-    <VueFloripaButton />
+    <CEJSButton />
   </form>
 </template>
 
@@ -19,8 +19,8 @@ import Input from './Input'
 export default {
   name: 'Form',
   components: {
-    'VueFloripaButton': Button,
-    'VueFloripaInput': Input
+    'CEJSButton': Button,
+    'CEJSInput': Input
   },
   props: {
     action: {
